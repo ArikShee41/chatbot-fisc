@@ -1,7 +1,6 @@
 # chatbot-fisc
 
 Chatbot académico para la FISC (UTP) basado en grafo de conocimiento (Neo4j) y NLP.
-Hito 3 de Ingeniería de Sistemas Inteligentes.
 
 ## Para usar
 
