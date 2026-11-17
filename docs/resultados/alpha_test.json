@@ -1,0 +1,1248 @@
+{
+  "split": "test",
+  "n": 61,
+  "intenciones": {
+    "creditos": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 5.0
+    },
+    "dependientes": {
+      "precision": 0.75,
+      "recall": 0.857,
+      "f1-score": 0.8,
+      "support": 7.0
+    },
+    "fuera_alcance": {
+      "precision": 0.8,
+      "recall": 0.667,
+      "f1-score": 0.727,
+      "support": 6.0
+    },
+    "fuera_dominio": {
+      "precision": 1.0,
+      "recall": 0.167,
+      "f1-score": 0.286,
+      "support": 6.0
+    },
+    "plan_materias": {
+      "precision": 1.0,
+      "recall": 0.833,
+      "f1-score": 0.909,
+      "support": 6.0
+    },
+    "prerrequisitos": {
+      "precision": 0.824,
+      "recall": 1.0,
+      "f1-score": 0.903,
+      "support": 14.0
+    },
+    "puedo_inscribir": {
+      "precision": 0.909,
+      "recall": 1.0,
+      "f1-score": 0.952,
+      "support": 10.0
+    },
+    "semestre_materia": {
+      "precision": 0.778,
+      "recall": 1.0,
+      "f1-score": 0.875,
+      "support": 7.0
+    },
+    "accuracy": 0.852,
+    "macro avg": {
+      "precision": 0.883,
+      "recall": 0.815,
+      "f1-score": 0.807,
+      "support": 61.0
+    },
+    "weighted avg": {
+      "precision": 0.871,
+      "recall": 0.852,
+      "f1-score": 0.827,
+      "support": 61.0
+    }
+  },
+  "exactitud_entidades": 0.907,
+  "tasa_exito_e2e": 0.311,
+  "exito_por_cq": {
+    "CQ1": 0.333,
+    "CQ2": 0.667,
+    "CQ3": 0.083,
+    "CQ4": 0.6,
+    "CQ5": 0.0,
+    "CQ10": 0.8
+  },
+  "completitud_cq": "1/6 CQs con éxito >= 80%",
+  "degradacion_progresiva": 1.0,
+  "respuestas_incorrectas": 0,
+  "latencia_ms": {
+    "nlp": {
+      "media": 0.6,
+      "p95": 0.8,
+      "max": 1.5
+    },
+    "cypher": {
+      "media": 0.7,
+      "p95": 2.7,
+      "max": 2.9
+    },
+    "total": {
+      "media": 1.3,
+      "p95": 3.4,
+      "max": 3.7
+    }
+  },
+  "grafo": {
+    "ciclos_REQUIERE": 0,
+    "codigos_duplicados": 0,
+    "nombres_duplicados": 0,
+    "REQUIERE_repetidas": 0
+  },
+  "errores": [
+    {
+      "pregunta": "¿Qué materias tiene la carrera de Ingeniería de Sistemas y Computación?",
+      "esperado": {
+        "pregunta": "¿Qué materias tiene la carrera de Ingeniería de Sistemas y Computación?",
+        "intencion": "plan_materias",
+        "tipo": "respuesta",
+        "entidades": "",
+        "aprobadas": "",
+        "veredicto": ""
+      },
+      "obtenido": {
+        "intencion": "dependientes",
+        "p": 0.211,
+        "tipo": "aclaracion",
+        "objetivo": null,
+        "filtro": {},
+        "aprobadas": [],
+        "veredicto": null,
+        "regla": null
+      },
+      "exito": false,
+      "latencia": {
+        "nlp": 1.5,
+        "cypher": 0.0,
+        "total": 1.5
+      }
+    },
+    {
+      "pregunta": "¿Qué me toca en tercer año?",
+      "esperado": {
+        "pregunta": "¿Qué me toca en tercer año?",
+        "intencion": "plan_materias",
+        "tipo": "respuesta",
+        "entidades": "anio:III",
+        "aprobadas": "",
+        "veredicto": ""
+      },
+      "obtenido": {
+        "intencion": "plan_materias",
+        "p": 0.455,
+        "tipo": "aclaracion",
+        "objetivo": null,
+        "filtro": {
+          "anio": "III"
+        },
+        "aprobadas": [],
+        "veredicto": null,
+        "regla": null
+      },
+      "exito": false,
+      "latencia": {
+        "nlp": 0.7,
+        "cypher": 0.0,
+        "total": 0.7
+      }
+    },
+    {
+      "pregunta": "¿cuales materias hay en el verano?",
+      "esperado": {
+        "pregunta": "¿cuales materias hay en el verano?",
+        "intencion": "plan_materias",
+        "tipo": "respuesta",
+        "entidades": "sem:Verano",
+        "aprobadas": "",
+        "veredicto": ""
+      },
+      "obtenido": {
+        "intencion": "plan_materias",
+        "p": 0.63,
+        "tipo": "aclaracion",
+        "objetivo": null,
+        "filtro": {
+          "sem": "Verano"
+        },
+        "aprobadas": [],
+        "veredicto": null,
+        "regla": null
+      },
+      "exito": false,
+      "latencia": {
+        "nlp": 0.6,
+        "cypher": 0.0,
+        "total": 0.6
+      }
+    },
+    {
+      "pregunta": "dame la lista de asignaturas de 4to año primer semestre",
+      "esperado": {
+        "pregunta": "dame la lista de asignaturas de 4to año primer semestre",
+        "intencion": "plan_materias",
+        "tipo": "respuesta",
+        "entidades": "anio:IV sem:I",
+        "aprobadas": "",
+        "veredicto": ""
+      },
+      "obtenido": {
+        "intencion": "plan_materias",
+        "p": 0.673,
+        "tipo": "aclaracion",
+        "objetivo": null,
+        "filtro": {
+          "anio": "IV",
+          "sem": "I"
+        },
+        "aprobadas": [],
+        "veredicto": null,
+        "regla": null
+      },
+      "exito": false,
+      "latencia": {
+        "nlp": 0.6,
+        "cypher": 0.0,
+        "total": 0.6
+      }
+    },
+    {
+      "pregunta": "¿cuando toca circuitos logicos?",
+      "esperado": {
+        "pregunta": "¿cuando toca circuitos logicos?",
+        "intencion": "semestre_materia",
+        "tipo": "respuesta",
+        "entidades": "0755",
+        "aprobadas": "",
+        "veredicto": ""
+      },
+      "obtenido": {
+        "intencion": "semestre_materia",
+        "p": 0.265,
+        "tipo": "aclaracion",
+        "objetivo": "0755",
+        "filtro": {},
+        "aprobadas": [],
+        "veredicto": null,
+        "regla": null
+      },
+      "exito": false,
+      "latencia": {
+        "nlp": 0.6,
+        "cypher": 0.0,
+        "total": 0.6
+      }
+    },
+    {
+      "pregunta": "¿Inglés II es de qué año?",
+      "esperado": {
+        "pregunta": "¿Inglés II es de qué año?",
+        "intencion": "semestre_materia",
+        "tipo": "respuesta",
+        "entidades": "8403",
+        "aprobadas": "",
+        "veredicto": ""
+      },
+      "obtenido": {
+        "intencion": "semestre_materia",
+        "p": 0.433,
+        "tipo": "aclaracion",
+        "objetivo": "8403",
+        "filtro": {},
+        "aprobadas": [],
+        "veredicto": null,
+        "regla": null
+      },
+      "exito": false,
+      "latencia": {
+        "nlp": 0.7,
+        "cypher": 0.0,
+        "total": 0.7
+      }
+    },
+    {
+      "pregunta": "¿Cuándo se ve Programación Avanzada?",
+      "esperado": {
+        "pregunta": "¿Cuándo se ve Programación Avanzada?",
+        "intencion": "semestre_materia",
+        "tipo": "sin_informacion",
+        "entidades": "",
+        "aprobadas": "",
+        "veredicto": ""
+      },
+      "obtenido": {
+        "intencion": "semestre_materia",
+        "p": 0.631,
+        "tipo": "aclaracion",
+        "objetivo": null,
+        "filtro": {},
+        "aprobadas": [],
+        "veredicto": null,
+        "regla": null
+      },
+      "exito": false,
+      "latencia": {
+        "nlp": 0.6,
+        "cypher": 0.0,
+        "total": 0.6
+      }
+    },
+    {
+      "pregunta": "¿Qué prerrequisitos tiene Inteligencia Artificial?",
+      "esperado": {
+        "pregunta": "¿Qué prerrequisitos tiene Inteligencia Artificial?",
+        "intencion": "prerrequisitos",
+        "tipo": "respuesta",
+        "entidades": "1197",
+        "aprobadas": "",
+        "veredicto": ""
+      },
+      "obtenido": {
+        "intencion": "prerrequisitos",
+        "p": 0.662,
+        "tipo": "aclaracion",
+        "objetivo": "1197",
+        "filtro": {},
+        "aprobadas": [],
+        "veredicto": null,
+        "regla": null
+      },
+      "exito": false,
+      "latencia": {
+        "nlp": 0.6,
+        "cypher": 0.0,
+        "total": 0.6
+      }
+    },
+    {
+      "pregunta": "¿Qué necesito para ver Sistemas Operativos?",
+      "esperado": {
+        "pregunta": "¿Qué necesito para ver Sistemas Operativos?",
+        "intencion": "prerrequisitos",
+        "tipo": "respuesta",
+        "entidades": "0689",
+        "aprobadas": "",
+        "veredicto": ""
+      },
+      "obtenido": {
+        "intencion": "prerrequisitos",
+        "p": 0.587,
+        "tipo": "aclaracion",
+        "objetivo": "0689",
+        "filtro": {},
+        "aprobadas": [],
+        "veredicto": null,
+        "regla": null
+      },
+      "exito": false,
+      "latencia": {
+        "nlp": 0.5,
+        "cypher": 0.0,
+        "total": 0.6
+      }
+    },
+    {
+      "pregunta": "¿Cuál es el requisito de Base de Datos II?",
+      "esperado": {
+        "pregunta": "¿Cuál es el requisito de Base de Datos II?",
+        "intencion": "prerrequisitos",
+        "tipo": "respuesta",
+        "entidades": "8399",
+        "aprobadas": "",
+        "veredicto": ""
+      },
+      "obtenido": {
+        "intencion": "prerrequisitos",
+        "p": 0.337,
+        "tipo": "aclaracion",
+        "objetivo": "8399",
+        "filtro": {},
+        "aprobadas": [],
+        "veredicto": null,
+        "regla": null
+      },
+      "exito": false,
+      "latencia": {
+        "nlp": 0.6,
+        "cypher": 0.0,
+        "total": 0.6
+      }
+    },
+    {
+      "pregunta": "requisitos para aprendizaje automatico",
+      "esperado": {
+        "pregunta": "requisitos para aprendizaje automatico",
+        "intencion": "prerrequisitos",
+        "tipo": "respuesta",
+        "entidades": "1496",
+        "aprobadas": "",
+        "veredicto": ""
+      },
+      "obtenido": {
+        "intencion": "prerrequisitos",
+        "p": 0.651,
+        "tipo": "aclaracion",
+        "objetivo": "1496",
+        "filtro": {},
+        "aprobadas": [],
+        "veredicto": null,
+        "regla": null
+      },
+      "exito": false,
+      "latencia": {
+        "nlp": 0.7,
+        "cypher": 0.0,
+        "total": 0.7
+      }
+    },
+    {
+      "pregunta": "¿Qué pide Herramientas de Computación Gráfica?",
+      "esperado": {
+        "pregunta": "¿Qué pide Herramientas de Computación Gráfica?",
+        "intencion": "prerrequisitos",
+        "tipo": "respuesta",
+        "entidades": "1196",
+        "aprobadas": "",
+        "veredicto": ""
+      },
+      "obtenido": {
+        "intencion": "prerrequisitos",
+        "p": 0.409,
+        "tipo": "aclaracion",
+        "objetivo": "1196",
+        "filtro": {},
+        "aprobadas": [],
+        "veredicto": null,
+        "regla": null
+      },
+      "exito": false,
+      "latencia": {
+        "nlp": 0.6,
+        "cypher": 0.0,
+        "total": 0.6
+      }
+    },
+    {
+      "pregunta": "¿Estadística Aplicada tiene prerrequisitos?",
+      "esperado": {
+        "pregunta": "¿Estadística Aplicada tiene prerrequisitos?",
+        "intencion": "prerrequisitos",
+        "tipo": "respuesta",
+        "entidades": "1563",
+        "aprobadas": "",
+        "veredicto": ""
+      },
+      "obtenido": {
+        "intencion": "prerrequisitos",
+        "p": 0.367,
+        "tipo": "aclaracion",
+        "objetivo": "1563",
+        "filtro": {},
+        "aprobadas": [],
+        "veredicto": null,
+        "regla": null
+      },
+      "exito": false,
+      "latencia": {
+        "nlp": 0.5,
+        "cypher": 0.0,
+        "total": 0.5
+      }
+    },
+    {
+      "pregunta": "¿Qué prerrequisito tiene Dibujo I?",
+      "esperado": {
+        "pregunta": "¿Qué prerrequisito tiene Dibujo I?",
+        "intencion": "prerrequisitos",
+        "tipo": "respuesta",
+        "entidades": "1548",
+        "aprobadas": "",
+        "veredicto": ""
+      },
+      "obtenido": {
+        "intencion": "prerrequisitos",
+        "p": 0.6,
+        "tipo": "aclaracion",
+        "objetivo": "1548",
+        "filtro": {},
+        "aprobadas": [],
+        "veredicto": null,
+        "regla": null
+      },
+      "exito": false,
+      "latencia": {
+        "nlp": 0.5,
+        "cypher": 0.0,
+        "total": 0.5
+      }
+    },
+    {
+      "pregunta": "¿que necesito pa ver redes?",
+      "esperado": {
+        "pregunta": "¿que necesito pa ver redes?",
+        "intencion": "prerrequisitos",
+        "tipo": "respuesta",
+        "entidades": "0761",
+        "aprobadas": "",
+        "veredicto": ""
+      },
+      "obtenido": {
+        "intencion": "prerrequisitos",
+        "p": 0.438,
+        "tipo": "aclaracion",
+        "objetivo": null,
+        "filtro": {},
+        "aprobadas": [],
+        "veredicto": null,
+        "regla": null
+      },
+      "exito": false,
+      "latencia": {
+        "nlp": 0.5,
+        "cypher": 0.0,
+        "total": 0.5
+      }
+    },
+    {
+      "pregunta": "¿Qué requisitos tiene Tópicos Especiales II?",
+      "esperado": {
+        "pregunta": "¿Qué requisitos tiene Tópicos Especiales II?",
+        "intencion": "prerrequisitos",
+        "tipo": "respuesta",
+        "entidades": "0760",
+        "aprobadas": "",
+        "veredicto": ""
+      },
+      "obtenido": {
+        "intencion": "prerrequisitos",
+        "p": 0.488,
+        "tipo": "aclaracion",
+        "objetivo": "0760",
+        "filtro": {},
+        "aprobadas": [],
+        "veredicto": null,
+        "regla": null
+      },
+      "exito": false,
+      "latencia": {
+        "nlp": 0.6,
+        "cypher": 0.0,
+        "total": 0.6
+      }
+    },
+    {
+      "pregunta": "¿Qué requisito tiene la materia 8462?",
+      "esperado": {
+        "pregunta": "¿Qué requisito tiene la materia 8462?",
+        "intencion": "prerrequisitos",
+        "tipo": "respuesta",
+        "entidades": "8462",
+        "aprobadas": "",
+        "veredicto": ""
+      },
+      "obtenido": {
+        "intencion": "prerrequisitos",
+        "p": 0.262,
+        "tipo": "aclaracion",
+        "objetivo": "8462",
+        "filtro": {},
+        "aprobadas": [],
+        "veredicto": null,
+        "regla": null
+      },
+      "exito": false,
+      "latencia": {
+        "nlp": 0.5,
+        "cypher": 0.0,
+        "total": 0.5
+      }
+    },
+    {
+      "pregunta": "¿Qué necesito para ver Cálculo IV?",
+      "esperado": {
+        "pregunta": "¿Qué necesito para ver Cálculo IV?",
+        "intencion": "prerrequisitos",
+        "tipo": "sin_informacion",
+        "entidades": "",
+        "aprobadas": "",
+        "veredicto": ""
+      },
+      "obtenido": {
+        "intencion": "prerrequisitos",
+        "p": 0.664,
+        "tipo": "aclaracion",
+        "objetivo": "7987",
+        "filtro": {},
+        "aprobadas": [],
+        "veredicto": null,
+        "regla": null
+      },
+      "exito": false,
+      "latencia": {
+        "nlp": 0.5,
+        "cypher": 0.0,
+        "total": 0.5
+      }
+    },
+    {
+      "pregunta": "¿Qué necesito para ver Lenguaje de Programación 2?",
+      "esperado": {
+        "pregunta": "¿Qué necesito para ver Lenguaje de Programación 2?",
+        "intencion": "prerrequisitos",
+        "tipo": "respuesta",
+        "entidades": "1569",
+        "aprobadas": "",
+        "veredicto": ""
+      },
+      "obtenido": {
+        "intencion": "prerrequisitos",
+        "p": 0.592,
+        "tipo": "aclaracion",
+        "objetivo": "1564",
+        "filtro": {},
+        "aprobadas": [],
+        "veredicto": null,
+        "regla": null
+      },
+      "exito": false,
+      "latencia": {
+        "nlp": 0.5,
+        "cypher": 0.0,
+        "total": 0.5
+      }
+    },
+    {
+      "pregunta": "Ya pasé Cálculo I ¿puedo llevar Cálculo III?",
+      "esperado": {
+        "pregunta": "Ya pasé Cálculo I ¿puedo llevar Cálculo III?",
+        "intencion": "puedo_inscribir",
+        "tipo": "respuesta",
+        "entidades": "8322",
+        "aprobadas": "7987",
+        "veredicto": "si"
+      },
+      "obtenido": {
+        "intencion": "puedo_inscribir",
+        "p": 0.594,
+        "tipo": "aclaracion",
+        "objetivo": "8322",
+        "filtro": {},
+        "aprobadas": [
+          "7987"
+        ],
+        "veredicto": null,
+        "regla": null
+      },
+      "exito": false,
+      "latencia": {
+        "nlp": 0.7,
+        "cypher": 0.0,
+        "total": 0.7
+      }
+    },
+    {
+      "pregunta": "¿Puedo ver Métodos Numéricos si aprobé Ecuaciones Diferenciales Ordinarias?",
+      "esperado": {
+        "pregunta": "¿Puedo ver Métodos Numéricos si aprobé Ecuaciones Diferenciales Ordinarias?",
+        "intencion": "puedo_inscribir",
+        "tipo": "respuesta",
+        "entidades": "0638",
+        "aprobadas": "0709",
+        "veredicto": "no"
+      },
+      "obtenido": {
+        "intencion": "puedo_inscribir",
+        "p": 0.424,
+        "tipo": "aclaracion",
+        "objetivo": "0709",
+        "filtro": {},
+        "aprobadas": [],
+        "veredicto": null,
+        "regla": null
+      },
+      "exito": false,
+      "latencia": {
+        "nlp": 0.8,
+        "cypher": 0.0,
+        "total": 0.8
+      }
+    },
+    {
+      "pregunta": "Aprobé Lenguaje de Programación I ¿puedo inscribir Lenguaje de Programación II?",
+      "esperado": {
+        "pregunta": "Aprobé Lenguaje de Programación I ¿puedo inscribir Lenguaje de Programación II?",
+        "intencion": "puedo_inscribir",
+        "tipo": "respuesta",
+        "entidades": "1569",
+        "aprobadas": "1564",
+        "veredicto": "si"
+      },
+      "obtenido": {
+        "intencion": "puedo_inscribir",
+        "p": 0.523,
+        "tipo": "aclaracion",
+        "objetivo": "1569",
+        "filtro": {},
+        "aprobadas": [],
+        "veredicto": null,
+        "regla": null
+      },
+      "exito": false,
+      "latencia": {
+        "nlp": 0.6,
+        "cypher": 0.0,
+        "total": 0.6
+      }
+    },
+    {
+      "pregunta": "¿Puedo tomar Formación de Emprendedores?",
+      "esperado": {
+        "pregunta": "¿Puedo tomar Formación de Emprendedores?",
+        "intencion": "puedo_inscribir",
+        "tipo": "respuesta",
+        "entidades": "3055",
+        "aprobadas": "",
+        "veredicto": "depende"
+      },
+      "obtenido": {
+        "intencion": "puedo_inscribir",
+        "p": 0.552,
+        "tipo": "aclaracion",
+        "objetivo": "3055",
+        "filtro": {},
+        "aprobadas": [],
+        "veredicto": null,
+        "regla": null
+      },
+      "exito": false,
+      "latencia": {
+        "nlp": 0.7,
+        "cypher": 0.0,
+        "total": 0.7
+      }
+    },
+    {
+      "pregunta": "¿De qué materias es prerrequisito Estructura de Datos II?",
+      "esperado": {
+        "pregunta": "¿De qué materias es prerrequisito Estructura de Datos II?",
+        "intencion": "dependientes",
+        "tipo": "respuesta",
+        "entidades": "8394",
+        "aprobadas": "",
+        "veredicto": ""
+      },
+      "obtenido": {
+        "intencion": "dependientes",
+        "p": 0.605,
+        "tipo": "aclaracion",
+        "objetivo": "8394",
+        "filtro": {},
+        "aprobadas": [],
+        "veredicto": null,
+        "regla": null
+      },
+      "exito": false,
+      "latencia": {
+        "nlp": 0.6,
+        "cypher": 0.0,
+        "total": 0.6
+      }
+    },
+    {
+      "pregunta": "¿Qué materias requieren Cálculo II?",
+      "esperado": {
+        "pregunta": "¿Qué materias requieren Cálculo II?",
+        "intencion": "dependientes",
+        "tipo": "respuesta",
+        "entidades": "7988",
+        "aprobadas": "",
+        "veredicto": ""
+      },
+      "obtenido": {
+        "intencion": "dependientes",
+        "p": 0.523,
+        "tipo": "aclaracion",
+        "objetivo": "7988",
+        "filtro": {},
+        "aprobadas": [],
+        "veredicto": null,
+        "regla": null
+      },
+      "exito": false,
+      "latencia": {
+        "nlp": 0.6,
+        "cypher": 0.0,
+        "total": 0.6
+      }
+    },
+    {
+      "pregunta": "¿Qué puedo ver después de aprobar Base de Datos I?",
+      "esperado": {
+        "pregunta": "¿Qué puedo ver después de aprobar Base de Datos I?",
+        "intencion": "dependientes",
+        "tipo": "respuesta",
+        "entidades": "0856",
+        "aprobadas": "",
+        "veredicto": ""
+      },
+      "obtenido": {
+        "intencion": "dependientes",
+        "p": 0.6,
+        "tipo": "aclaracion",
+        "objetivo": "0856",
+        "filtro": {},
+        "aprobadas": [],
+        "veredicto": null,
+        "regla": null
+      },
+      "exito": false,
+      "latencia": {
+        "nlp": 0.6,
+        "cypher": 0.0,
+        "total": 0.6
+      }
+    },
+    {
+      "pregunta": "¿qué materias abre probabilidad aplicada?",
+      "esperado": {
+        "pregunta": "¿qué materias abre probabilidad aplicada?",
+        "intencion": "dependientes",
+        "tipo": "respuesta",
+        "entidades": "1568",
+        "aprobadas": "",
+        "veredicto": ""
+      },
+      "obtenido": {
+        "intencion": "dependientes",
+        "p": 0.678,
+        "tipo": "aclaracion",
+        "objetivo": "1568",
+        "filtro": {},
+        "aprobadas": [],
+        "veredicto": null,
+        "regla": null
+      },
+      "exito": false,
+      "latencia": {
+        "nlp": 0.6,
+        "cypher": 0.0,
+        "total": 0.6
+      }
+    },
+    {
+      "pregunta": "¿Para qué materias es requisito Lenguaje de Programación I?",
+      "esperado": {
+        "pregunta": "¿Para qué materias es requisito Lenguaje de Programación I?",
+        "intencion": "dependientes",
+        "tipo": "respuesta",
+        "entidades": "1564",
+        "aprobadas": "",
+        "veredicto": ""
+      },
+      "obtenido": {
+        "intencion": "dependientes",
+        "p": 0.696,
+        "tipo": "aclaracion",
+        "objetivo": "1564",
+        "filtro": {},
+        "aprobadas": [],
+        "veredicto": null,
+        "regla": null
+      },
+      "exito": false,
+      "latencia": {
+        "nlp": 0.6,
+        "cypher": 0.0,
+        "total": 0.6
+      }
+    },
+    {
+      "pregunta": "¿Qué asignaturas dependen de Física II?",
+      "esperado": {
+        "pregunta": "¿Qué asignaturas dependen de Física II?",
+        "intencion": "dependientes",
+        "tipo": "respuesta",
+        "entidades": "8320",
+        "aprobadas": "",
+        "veredicto": ""
+      },
+      "obtenido": {
+        "intencion": "dependientes",
+        "p": 0.571,
+        "tipo": "aclaracion",
+        "objetivo": null,
+        "filtro": {},
+        "aprobadas": [],
+        "veredicto": null,
+        "regla": null
+      },
+      "exito": false,
+      "latencia": {
+        "nlp": 0.5,
+        "cypher": 0.0,
+        "total": 0.5
+      }
+    },
+    {
+      "pregunta": "¿De qué es requisito Geografía de Panamá?",
+      "esperado": {
+        "pregunta": "¿De qué es requisito Geografía de Panamá?",
+        "intencion": "dependientes",
+        "tipo": "respuesta",
+        "entidades": "1403",
+        "aprobadas": "",
+        "veredicto": ""
+      },
+      "obtenido": {
+        "intencion": "prerrequisitos",
+        "p": 0.394,
+        "tipo": "aclaracion",
+        "objetivo": "1403",
+        "filtro": {},
+        "aprobadas": [],
+        "veredicto": null,
+        "regla": null
+      },
+      "exito": false,
+      "latencia": {
+        "nlp": 0.5,
+        "cypher": 0.0,
+        "total": 0.5
+      }
+    },
+    {
+      "pregunta": "¿Cuál es el total de créditos para graduarme de la licenciatura?",
+      "esperado": {
+        "pregunta": "¿Cuál es el total de créditos para graduarme de la licenciatura?",
+        "intencion": "creditos",
+        "tipo": "respuesta",
+        "entidades": "",
+        "aprobadas": "",
+        "veredicto": ""
+      },
+      "obtenido": {
+        "intencion": "creditos",
+        "p": 0.505,
+        "tipo": "aclaracion",
+        "objetivo": null,
+        "filtro": {},
+        "aprobadas": [],
+        "veredicto": null,
+        "regla": null
+      },
+      "exito": false,
+      "latencia": {
+        "nlp": 0.9,
+        "cypher": 0.0,
+        "total": 0.9
+      }
+    },
+    {
+      "pregunta": "¿Qué becas hay disponibles?",
+      "esperado": {
+        "pregunta": "¿Qué becas hay disponibles?",
+        "intencion": "fuera_alcance",
+        "tipo": "rechazo",
+        "entidades": "",
+        "aprobadas": "",
+        "veredicto": ""
+      },
+      "obtenido": {
+        "intencion": "fuera_alcance",
+        "p": 0.332,
+        "tipo": "aclaracion",
+        "objetivo": null,
+        "filtro": {},
+        "aprobadas": [],
+        "veredicto": null,
+        "regla": null
+      },
+      "exito": false,
+      "latencia": {
+        "nlp": 0.6,
+        "cypher": 0.0,
+        "total": 0.6
+      }
+    },
+    {
+      "pregunta": "¿Cuáles son los requisitos de graduación?",
+      "esperado": {
+        "pregunta": "¿Cuáles son los requisitos de graduación?",
+        "intencion": "fuera_alcance",
+        "tipo": "rechazo",
+        "entidades": "",
+        "aprobadas": "",
+        "veredicto": ""
+      },
+      "obtenido": {
+        "intencion": "prerrequisitos",
+        "p": 0.661,
+        "tipo": "aclaracion",
+        "objetivo": null,
+        "filtro": {},
+        "aprobadas": [],
+        "veredicto": null,
+        "regla": null
+      },
+      "exito": false,
+      "latencia": {
+        "nlp": 0.6,
+        "cypher": 0.0,
+        "total": 0.6
+      }
+    },
+    {
+      "pregunta": "¿En qué fechas es la inclusión?",
+      "esperado": {
+        "pregunta": "¿En qué fechas es la inclusión?",
+        "intencion": "fuera_alcance",
+        "tipo": "rechazo",
+        "entidades": "",
+        "aprobadas": "",
+        "veredicto": ""
+      },
+      "obtenido": {
+        "intencion": "semestre_materia",
+        "p": 0.319,
+        "tipo": "aclaracion",
+        "objetivo": null,
+        "filtro": {},
+        "aprobadas": [],
+        "veredicto": null,
+        "regla": null
+      },
+      "exito": false,
+      "latencia": {
+        "nlp": 0.6,
+        "cypher": 0.0,
+        "total": 0.6
+      }
+    },
+    {
+      "pregunta": "¿Cómo pido la beca de asistencia económica?",
+      "esperado": {
+        "pregunta": "¿Cómo pido la beca de asistencia económica?",
+        "intencion": "fuera_alcance",
+        "tipo": "rechazo",
+        "entidades": "",
+        "aprobadas": "",
+        "veredicto": ""
+      },
+      "obtenido": {
+        "intencion": "fuera_alcance",
+        "p": 0.647,
+        "tipo": "aclaracion",
+        "objetivo": null,
+        "filtro": {},
+        "aprobadas": [],
+        "veredicto": null,
+        "regla": null
+      },
+      "exito": false,
+      "latencia": {
+        "nlp": 0.6,
+        "cypher": 0.0,
+        "total": 0.6
+      }
+    },
+    {
+      "pregunta": "¿Dónde pago la matrícula?",
+      "esperado": {
+        "pregunta": "¿Dónde pago la matrícula?",
+        "intencion": "fuera_alcance",
+        "tipo": "rechazo",
+        "entidades": "",
+        "aprobadas": "",
+        "veredicto": ""
+      },
+      "obtenido": {
+        "intencion": "fuera_alcance",
+        "p": 0.62,
+        "tipo": "aclaracion",
+        "objetivo": null,
+        "filtro": {},
+        "aprobadas": [],
+        "veredicto": null,
+        "regla": null
+      },
+      "exito": false,
+      "latencia": {
+        "nlp": 0.5,
+        "cypher": 0.0,
+        "total": 0.5
+      }
+    },
+    {
+      "pregunta": "¿Qué tal?",
+      "esperado": {
+        "pregunta": "¿Qué tal?",
+        "intencion": "fuera_dominio",
+        "tipo": "rechazo",
+        "entidades": "",
+        "aprobadas": "",
+        "veredicto": ""
+      },
+      "obtenido": {
+        "intencion": "dependientes",
+        "p": 0.413,
+        "tipo": "aclaracion",
+        "objetivo": null,
+        "filtro": {},
+        "aprobadas": [],
+        "veredicto": null,
+        "regla": null
+      },
+      "exito": false,
+      "latencia": {
+        "nlp": 0.5,
+        "cypher": 0.0,
+        "total": 0.5
+      }
+    },
+    {
+      "pregunta": "¿Quién es el presidente de Panamá?",
+      "esperado": {
+        "pregunta": "¿Quién es el presidente de Panamá?",
+        "intencion": "fuera_dominio",
+        "tipo": "rechazo",
+        "entidades": "",
+        "aprobadas": "",
+        "veredicto": ""
+      },
+      "obtenido": {
+        "intencion": "prerrequisitos",
+        "p": 0.25,
+        "tipo": "aclaracion",
+        "objetivo": null,
+        "filtro": {},
+        "aprobadas": [],
+        "veredicto": null,
+        "regla": null
+      },
+      "exito": false,
+      "latencia": {
+        "nlp": 0.5,
+        "cypher": 0.0,
+        "total": 0.5
+      }
+    },
+    {
+      "pregunta": "¿Me ayudas con mi tarea de física?",
+      "esperado": {
+        "pregunta": "¿Me ayudas con mi tarea de física?",
+        "intencion": "fuera_dominio",
+        "tipo": "rechazo",
+        "entidades": "",
+        "aprobadas": "",
+        "veredicto": ""
+      },
+      "obtenido": {
+        "intencion": "puedo_inscribir",
+        "p": 0.241,
+        "tipo": "aclaracion",
+        "objetivo": null,
+        "filtro": {},
+        "aprobadas": [],
+        "veredicto": null,
+        "regla": null
+      },
+      "exito": false,
+      "latencia": {
+        "nlp": 0.5,
+        "cypher": 0.0,
+        "total": 0.5
+      }
+    },
+    {
+      "pregunta": "Recomiéndame una canción",
+      "esperado": {
+        "pregunta": "Recomiéndame una canción",
+        "intencion": "fuera_dominio",
+        "tipo": "rechazo",
+        "entidades": "",
+        "aprobadas": "",
+        "veredicto": ""
+      },
+      "obtenido": {
+        "intencion": "fuera_alcance",
+        "p": 0.457,
+        "tipo": "aclaracion",
+        "objetivo": null,
+        "filtro": {},
+        "aprobadas": [],
+        "veredicto": null,
+        "regla": null
+      },
+      "exito": false,
+      "latencia": {
+        "nlp": 0.5,
+        "cypher": 0.0,
+        "total": 0.5
+      }
+    },
+    {
+      "pregunta": "¿Va a llover mañana?",
+      "esperado": {
+        "pregunta": "¿Va a llover mañana?",
+        "intencion": "fuera_dominio",
+        "tipo": "rechazo",
+        "entidades": "",
+        "aprobadas": "",
+        "veredicto": ""
+      },
+      "obtenido": {
+        "intencion": "semestre_materia",
+        "p": 0.192,
+        "tipo": "aclaracion",
+        "objetivo": null,
+        "filtro": {},
+        "aprobadas": [],
+        "veredicto": null,
+        "regla": null
+      },
+      "exito": false,
+      "latencia": {
+        "nlp": 0.5,
+        "cypher": 0.0,
+        "total": 0.5
+      }
+    },
+    {
+      "pregunta": "xyz 123",
+      "esperado": {
+        "pregunta": "xyz 123",
+        "intencion": "fuera_dominio",
+        "tipo": "rechazo",
+        "entidades": "",
+        "aprobadas": "",
+        "veredicto": ""
+      },
+      "obtenido": {
+        "intencion": "fuera_dominio",
+        "p": 0.177,
+        "tipo": "aclaracion",
+        "objetivo": null,
+        "filtro": {},
+        "aprobadas": [],
+        "veredicto": null,
+        "regla": null
+      },
+      "exito": false,
+      "latencia": {
+        "nlp": 0.5,
+        "cypher": 0.0,
+        "total": 0.5
+      }
+    }
+  ]
+}

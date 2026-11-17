@@ -1,0 +1,100 @@
+pregunta,intencion
+¿Qué materias tiene el plan de estudios de mi carrera?,plan_materias
+¿Cuáles son las asignaturas de la licenciatura en sistemas?,plan_materias
+Muéstrame el plan de estudios completo,plan_materias
+¿Qué materias se ven en primer año?,plan_materias
+¿Qué asignaturas hay en tercer año primer semestre?,plan_materias
+Lista de materias del cuarto año,plan_materias
+¿Qué cursos me tocan en segundo año?,plan_materias
+¿Qué materias se dan en el verano de segundo año?,plan_materias
+Dime las materias del quinto año,plan_materias
+¿Cuáles son las materias del segundo semestre de tercer año?,plan_materias
+¿Qué voy a ver en el cuarto año segundo semestre?,plan_materias
+Quiero ver la malla curricular,plan_materias
+¿En qué semestre se ve Base de Datos II?,semestre_materia
+¿En qué año se da Inteligencia Artificial?,semestre_materia
+¿Cuándo me toca Sistemas Operativos?,semestre_materia
+¿En qué semestre está Cálculo III?,semestre_materia
+¿En qué año del plan aparece Videojuegos?,semestre_materia
+¿Cuándo se cursa Redes Informáticas?,semestre_materia
+¿Estructura de Datos I es de primer o segundo semestre?,semestre_materia
+¿En qué parte de la carrera se ve Simulación de Sistemas?,semestre_materia
+¿Para qué año está Ingeniería de Software II?,semestre_materia
+¿Qué semestre corresponde a Química I?,semestre_materia
+¿En qué periodo del plan va Historia de Panamá?,semestre_materia
+¿Qué prerrequisitos tiene Base de Datos II?,prerrequisitos
+¿Qué necesito para ver Inteligencia Artificial?,prerrequisitos
+¿Cuáles son los requisitos de Sistemas Operativos?,prerrequisitos
+¿Qué materia debo aprobar antes de Cálculo II?,prerrequisitos
+¿Qué se requiere para inscribir Redes Informáticas?,prerrequisitos
+Requisitos de Aprendizaje Automático,prerrequisitos
+¿Qué tengo que pasar antes de Lenguaje de Programación II?,prerrequisitos
+¿Cálculo III tiene prerrequisito?,prerrequisitos
+¿Qué pide Seguridad Informática para poder llevarla?,prerrequisitos
+¿Cuál es el prerrequisito de Estructura de Datos II?,prerrequisitos
+¿Qué materias previas exige Métodos Numéricos?,prerrequisitos
+¿Hay algún requisito para Geografía de Panamá?,prerrequisitos
+¿Puedo inscribir Base de Datos II si ya aprobé Base de Datos I?,puedo_inscribir
+Si aprobé Cálculo I ¿puedo meter Cálculo II?,puedo_inscribir
+¿Puedo llevar Sistemas Operativos? Ya pasé Organización y Arquitectura de Computadoras,puedo_inscribir
+Ya aprobé Estructura de Datos I y Lenguaje de Programación I ¿puedo ver Estructura de Datos II?,puedo_inscribir
+¿Me dejan matricular Aprendizaje Automático si aprobé Inteligencia Artificial?,puedo_inscribir
+Aprobé Física I ¿puedo tomar Física II?,puedo_inscribir
+¿Puedo cursar Videojuegos habiendo aprobado Animación Digital?,puedo_inscribir
+Tengo aprobada Probabilidad Aplicada ¿puedo inscribir Metodología de la Investigación?,puedo_inscribir
+¿Estoy habilitado para Redes Informáticas si pasé Sistemas Operativos?,puedo_inscribir
+¿Puedo matricular Ingeniería de Software II con Ingeniería de Software I aprobada?,puedo_inscribir
+Si ya tengo Desarrollo Lógico y Algoritmos ¿puedo inscribir Estructuras Discretas?,puedo_inscribir
+¿De qué materias es prerrequisito Cálculo I?,dependientes
+¿Qué materias se desbloquean al aprobar Estructura de Datos II?,dependientes
+¿Qué asignaturas requieren Base de Datos I?,dependientes
+Si apruebo Inteligencia Artificial ¿qué materias puedo ver después?,dependientes
+¿Para qué materias sirve Probabilidad Aplicada como requisito?,dependientes
+¿Qué cursos dependen de Lenguaje de Programación I?,dependientes
+¿Qué abre aprobar Ecuaciones Diferenciales Ordinarias?,dependientes
+¿Qué materias piden Física I?,dependientes
+¿Qué viene después de Sistemas Operativos?,dependientes
+¿Qué asignaturas tienen como requisito Circuitos Lógicos?,dependientes
+¿Cuántos créditos tiene el plan de estudios de mi carrera?,creditos
+¿Cuántos créditos necesito en total para la licenciatura?,creditos
+¿Cuántos créditos vale Inteligencia Artificial?,creditos
+Créditos de Base de Datos II,creditos
+¿Cuál es el total de créditos de la carrera?,creditos
+¿Cuántos créditos tiene Cálculo I?,creditos
+¿Cuántos créditos suma todo el plan?,creditos
+¿Qué valor en créditos tiene Videojuegos?,creditos
+¿Cuántos créditos son Redes Informáticas?,creditos
+¿Cuántos créditos tiene la carrera de sistemas?,creditos
+¿Cómo hago el retiro de una materia?,fuera_alcance
+¿Qué becas ofrece la UTP?,fuera_alcance
+¿Qué requisitos piden para graduarme?,fuera_alcance
+¿Cuándo es el periodo de inclusión?,fuera_alcance
+¿Cómo solicito una beca de excelencia?,fuera_alcance
+¿Hasta qué fecha puedo retirar materias?,fuera_alcance
+¿Qué documentos necesito para el trámite de graduación?,fuera_alcance
+¿Cuánto cuesta la matrícula?,fuera_alcance
+¿Dónde queda la Secretaría Académica?,fuera_alcance
+¿Cómo hago una inclusión de asignatura?,fuera_alcance
+¿Qué índice necesito para mantener la beca?,fuera_alcance
+¿Cómo está el clima hoy?,fuera_dominio
+Cuéntame un chiste,fuera_dominio
+¿Quién ganó el partido de ayer?,fuera_dominio
+Hola,fuera_dominio
+¿Cuál es la capital de Francia?,fuera_dominio
+Gracias,fuera_dominio
+¿Me recomiendas una película?,fuera_dominio
+Escríbeme un poema,fuera_dominio
+¿Qué hora es?,fuera_dominio
+¿Cómo cocino arroz con pollo?,fuera_dominio
+¿Cuál es el pensum de la carrera?,plan_materias
+¿Qué asignaturas componen la licenciatura?,plan_materias
+¿Qué materias se habilitan al aprobar Cálculo II?,dependientes
+¿Qué puedo cursar cuando apruebe Base de Datos I?,dependientes
+¿Qué materias tienen como prerrequisito Física II?,dependientes
+¿Hay becas para estudiantes de ingeniería?,fuera_alcance
+¿Cuándo son las inclusiones?,fuera_alcance
+¿Hasta cuándo hay retiros?,fuera_alcance
+¿Cuánto es 5 por 3?,fuera_dominio
+¿Qué piensas del gobierno?,fuera_dominio
+¿Dónde venden comida barata?,fuera_dominio
+Buenas tardes,fuera_dominio

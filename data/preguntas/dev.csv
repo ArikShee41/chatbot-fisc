@@ -1,0 +1,37 @@
+pregunta,intencion,tipo,entidades,aprobadas,veredicto
+¿Qué materias hay en el primer año?,plan_materias,respuesta,anio:I,,
+materias de cuarto año segundo semestre,plan_materias,respuesta,anio:IV sem:II,,
+¿cual es el pensum de sistemas?,plan_materias,respuesta,,,
+¿En qué semestre se ve Redes?,semestre_materia,respuesta,0761,,
+en que año veo base de datos 2,semestre_materia,respuesta,8399,,
+¿Cuándo se lleva Probabilidad Aplicada?,semestre_materia,respuesta,1568,,
+¿qué semestre es la materia 0689?,semestre_materia,respuesta,0689,,
+¿Qué necesito para meter Base de Datos II?,prerrequisitos,respuesta,8399,,
+prerrequisitos de IA,prerrequisitos,respuesta,1197,,
+¿Qué hay que aprobar antes de calculo 2?,prerrequisitos,respuesta,7988,,
+¿Qué requisitos tiene Gerencia de Proyectos Informáticos?,prerrequisitos,respuesta,8469,,
+¿Qué prerrequisitos tiene Química I?,prerrequisitos,respuesta,1547,,
+¿requisitos de estructura de datos ll?,prerrequisitos,respuesta,8394,,
+¿Qué prerrequisitos tiene Física Cuántica?,prerrequisitos,sin_informacion,,,
+¿Qué prerrequisitos tiene?,prerrequisitos,aclaracion,,,
+¿Puedo inscribir Sistemas Operativos si ya pasé Circuitos Lógicos?,puedo_inscribir,respuesta,0689,0755,no
+ya aprobé base de datos 1 puedo inscribir base de datos 2?,puedo_inscribir,respuesta,8399,0856,si
+¿Puedo ver Aprendizaje Automático si aprobé Inteligencia Artificial y Análisis de Datos?,puedo_inscribir,respuesta,1496,1197 1195,si
+¿Puedo llevar Seguridad Informática? aprobé Redes Informáticas,puedo_inscribir,respuesta,0837,0761,si
+¿Puedo inscribir Gerencia de Proyectos Informáticos?,puedo_inscribir,respuesta,8469,,depende
+¿Qué materias necesitan Estructura de Datos I?,dependientes,respuesta,8362,,
+¿de que es requisito calculo 1?,dependientes,respuesta,7987,,
+¿qué se habilita cuando paso Inteligencia Artificial?,dependientes,respuesta,1197,,
+¿Qué materias dependen de Trabajo de Graduación II?,dependientes,respuesta,8473,,
+¿Cuántos créditos son en total?,creditos,respuesta,,,
+¿Cuántos créditos tiene Seguridad Informática?,creditos,respuesta,0837,,
+creditos de sistemas operativos,creditos,respuesta,0689,,
+¿Cómo me retiro de una materia?,fuera_alcance,rechazo,,,
+¿Hay becas para estudiantes de sistemas?,fuera_alcance,rechazo,,,
+¿Qué necesito para graduarme?,fuera_alcance,rechazo,,,
+¿Cuándo abren las inclusiones?,fuera_alcance,rechazo,,,
+Buenos días,fuera_dominio,rechazo,,,
+¿Cuánto es 2 más 2?,fuera_dominio,rechazo,,,
+¿Qué opinas de la política?,fuera_dominio,rechazo,,,
+¿Dónde puedo comer cerca de la UTP?,fuera_dominio,rechazo,,,
+asdfgh,fuera_dominio,rechazo,,,

@@ -1,0 +1,240 @@
+{
+  "split": "dev",
+  "n": 36,
+  "intenciones": {
+    "creditos": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 3.0
+    },
+    "dependientes": {
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1-score": 0.667,
+      "support": 4.0
+    },
+    "fuera_alcance": {
+      "precision": 0.667,
+      "recall": 1.0,
+      "f1-score": 0.8,
+      "support": 4.0
+    },
+    "fuera_dominio": {
+      "precision": 1.0,
+      "recall": 0.6,
+      "f1-score": 0.75,
+      "support": 5.0
+    },
+    "plan_materias": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 3.0
+    },
+    "prerrequisitos": {
+      "precision": 0.889,
+      "recall": 1.0,
+      "f1-score": 0.941,
+      "support": 8.0
+    },
+    "puedo_inscribir": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 5.0
+    },
+    "semestre_materia": {
+      "precision": 0.8,
+      "recall": 1.0,
+      "f1-score": 0.889,
+      "support": 4.0
+    },
+    "accuracy": 0.889,
+    "macro avg": {
+      "precision": 0.919,
+      "recall": 0.887,
+      "f1-score": 0.881,
+      "support": 36.0
+    },
+    "weighted avg": {
+      "precision": 0.916,
+      "recall": 0.889,
+      "f1-score": 0.881,
+      "support": 36.0
+    }
+  },
+  "exactitud_entidades": 1.0,
+  "tasa_exito_e2e": 0.861,
+  "exito_por_cq": {
+    "CQ1": 1.0,
+    "CQ2": 1.0,
+    "CQ3": 1.0,
+    "CQ4": 1.0,
+    "CQ5": 0.5,
+    "CQ10": 1.0
+  },
+  "completitud_cq": "5/6 CQs con éxito >= 80%",
+  "degradacion_progresiva": 1.0,
+  "respuestas_incorrectas": 1,
+  "latencia_ms": {
+    "nlp": {
+      "media": 1.5,
+      "p95": 1.8,
+      "max": 1.9
+    },
+    "cypher": {
+      "media": 1.7,
+      "p95": 5.4,
+      "max": 6.6
+    },
+    "total": {
+      "media": 3.2,
+      "p95": 6.6,
+      "max": 8.1
+    }
+  },
+  "grafo": {
+    "ciclos_REQUIERE": 0,
+    "codigos_duplicados": 0,
+    "nombres_duplicados": 0,
+    "REQUIERE_repetidas": 0
+  },
+  "errores": [
+    {
+      "pregunta": "¿Qué prerrequisitos tiene Física Cuántica?",
+      "esperado": {
+        "pregunta": "¿Qué prerrequisitos tiene Física Cuántica?",
+        "intencion": "prerrequisitos",
+        "tipo": "sin_informacion",
+        "entidades": "",
+        "aprobadas": "",
+        "veredicto": ""
+      },
+      "obtenido": {
+        "intencion": "prerrequisitos",
+        "p": 0.615,
+        "tipo": "aclaracion",
+        "objetivo": null,
+        "filtro": {},
+        "aprobadas": [],
+        "veredicto": null,
+        "regla": "R5"
+      },
+      "exito": false,
+      "latencia": {
+        "nlp": 1.5,
+        "cypher": 0.0,
+        "total": 1.5
+      }
+    },
+    {
+      "pregunta": "¿de que es requisito calculo 1?",
+      "esperado": {
+        "pregunta": "¿de que es requisito calculo 1?",
+        "intencion": "dependientes",
+        "tipo": "respuesta",
+        "entidades": "7987",
+        "aprobadas": "",
+        "veredicto": ""
+      },
+      "obtenido": {
+        "intencion": "prerrequisitos",
+        "p": 0.611,
+        "tipo": "respuesta",
+        "objetivo": "7987",
+        "filtro": {},
+        "aprobadas": [],
+        "veredicto": null,
+        "regla": "R4"
+      },
+      "exito": false,
+      "latencia": {
+        "nlp": 1.5,
+        "cypher": 1.9,
+        "total": 3.5
+      }
+    },
+    {
+      "pregunta": "¿qué se habilita cuando paso Inteligencia Artificial?",
+      "esperado": {
+        "pregunta": "¿qué se habilita cuando paso Inteligencia Artificial?",
+        "intencion": "dependientes",
+        "tipo": "respuesta",
+        "entidades": "1197",
+        "aprobadas": "",
+        "veredicto": ""
+      },
+      "obtenido": {
+        "intencion": "semestre_materia",
+        "p": 0.351,
+        "tipo": "aclaracion",
+        "objetivo": "1197",
+        "filtro": {},
+        "aprobadas": [],
+        "veredicto": null,
+        "regla": null
+      },
+      "exito": false,
+      "latencia": {
+        "nlp": 1.7,
+        "cypher": 0.0,
+        "total": 1.7
+      }
+    },
+    {
+      "pregunta": "¿Qué opinas de la política?",
+      "esperado": {
+        "pregunta": "¿Qué opinas de la política?",
+        "intencion": "fuera_dominio",
+        "tipo": "rechazo",
+        "entidades": "",
+        "aprobadas": "",
+        "veredicto": ""
+      },
+      "obtenido": {
+        "intencion": "fuera_alcance",
+        "p": 0.325,
+        "tipo": "aclaracion",
+        "objetivo": null,
+        "filtro": {},
+        "aprobadas": [],
+        "veredicto": null,
+        "regla": null
+      },
+      "exito": false,
+      "latencia": {
+        "nlp": 1.3,
+        "cypher": 0.0,
+        "total": 1.3
+      }
+    },
+    {
+      "pregunta": "¿Dónde puedo comer cerca de la UTP?",
+      "esperado": {
+        "pregunta": "¿Dónde puedo comer cerca de la UTP?",
+        "intencion": "fuera_dominio",
+        "tipo": "rechazo",
+        "entidades": "",
+        "aprobadas": "",
+        "veredicto": ""
+      },
+      "obtenido": {
+        "intencion": "fuera_alcance",
+        "p": 0.48,
+        "tipo": "rechazo",
+        "objetivo": null,
+        "filtro": {},
+        "aprobadas": [],
+        "veredicto": null,
+        "regla": null
+      },
+      "exito": false,
+      "latencia": {
+        "nlp": 1.7,
+        "cypher": 0.0,
+        "total": 1.7
+      }
+    }
+  ]
+}

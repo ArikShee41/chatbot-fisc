@@ -1,0 +1,60 @@
+codigo,nombre,creditos,anio,semestre,requisitos
+7987,Cálculo I,5,I,,
+8319,Física I (Mecánica),5,I,,
+1547,Química I,4,I,,
+8355,Inglés I,3,I,,
+1548,Dibujo I,4,I,,
+0741,Desarrollo Lógico y Algoritmos,4,I,,
+8360,Comunicación Oral y Escrita,3,I,,
+1403,Geografía de Panamá,3,I,,
+7988,Cálculo II,5,I,,7987
+8322,Cálculo III,4,I,,7987
+8320,Física II (Electricidad y Magnetismo),5,I,,8319
+8403,Inglés II,3,I,,8355
+0709,Ecuaciones Diferenciales Ordinarias,5,II,I,7988
+8353,Tecnología de Información y Comunicación,4,II,I,
+1563,Estadística Aplicada,3,II,I,CURSAR SEGUNDO AÑO
+0849,Interacción Humano Computador,3,II,I,CURSAR SEGUNDO AÑO
+1564,Lenguaje de Programación I,4,II,I,0741
+1566,Estructuras Discretas,4,II,I,0741
+8321,Matemáticas Superiores para Ingenieros,5,II,II,0709
+1567,Sistemas Colaborativos,4,II,II,
+0638,Métodos Numéricos para Ingeniería,4,II,II,0709 8322
+8362,Estructura de Datos I,4,II,II,1564
+1568,Probabilidad Aplicada,3,II,II,1563
+1569,Lenguaje de Programación II,4,II,II,1564
+0749,Electrónica Básica,3,II,II,8320
+1549,Ambiente y Sostenibilidad,3,II,Verano,
+1407,Historia de Panamá,3,II,Verano,
+1195,Análisis de Datos y Toma de Decisiones para Computación,4,III,I,1568
+1196,Herramientas de Computación Gráfica,3,III,I,S 8394 1548
+1197,Inteligencia Artificial,4,III,I,S 8394
+8394,Estructura de Datos II,4,III,I,8362
+1570,Ingeniería de Software I,4,III,I,
+0856,Base de Datos I,4,III,I,S 8394
+1198,Animación Digital,3,III,II,1196
+8623,Metodología de la Investigación,3,III,II,1568
+0755,Circuitos Lógicos,3,III,II,8353
+0758,Ingeniería de Sistemas Robóticos,4,III,II,1197
+1571,Ingeniería de Software II,4,III,II,1570
+8399,Base de Datos II,4,III,II,0856
+1495,Videojuegos,3,IV,I,1198
+1496,Aprendizaje Automático,4,IV,I,1195 1197
+1497,Ingeniería de Sistemas Dinámicos,4,IV,I,0709 8623
+1572,Lenguaje de Programación III,4,IV,I,8362
+8469,Gerencia de Proyectos Informáticos,4,IV,I,CURSAR IV AÑO
+0687,Organización y Arquitectura de Computadoras,4,IV,I,0755
+0756,Tópicos Especiales I,3,IV,II,CURSAR IV AÑO
+8462,"Lenguajes Formales, Autómatas y Compiladores",4,IV,II,8394
+1498,Ingeniería de Sistemas Inteligentes,4,IV,II,1496
+8456,Simulación de Sistemas,4,IV,II,1497
+0689,Sistemas Operativos,4,IV,II,0687
+1573,Lenguaje de Programación IV,4,IV,II,1572
+8467,Trabajo de Graduación I,3,IV,II,
+1499,Gerencia de Recursos Humanos,4,V,I,CURSAR V AÑO
+0760,Tópicos Especiales II,3,V,I,CURSAR V AÑO
+0740,Política y Legislación Informática,3,V,I,
+0761,Redes Informáticas,4,V,I,0689
+3055,Formación de Emprendedores,3,V,I,CURSAR V AÑO
+0837,Seguridad Informática,4,V,I,S 0761
+8473,Trabajo de Graduación II,3,V,I,

@@ -1,0 +1,62 @@
+pregunta,intencion,tipo,entidades,aprobadas,veredicto
+¿Qué materias tiene la carrera de Ingeniería de Sistemas y Computación?,plan_materias,respuesta,,,
+¿Qué asignaturas se ven en segundo año segundo semestre?,plan_materias,respuesta,anio:II sem:II,,
+materias del quinto año,plan_materias,respuesta,anio:V,,
+¿Qué me toca en tercer año?,plan_materias,respuesta,anio:III,,
+¿cuales materias hay en el verano?,plan_materias,respuesta,sem:Verano,,
+dame la lista de asignaturas de 4to año primer semestre,plan_materias,respuesta,anio:IV sem:I,,
+¿En qué semestre va Base de Datos I?,semestre_materia,respuesta,0856,,
+¿En qué año se ve Aprendizaje Automático?,semestre_materia,respuesta,1496,,
+¿cuando toca circuitos logicos?,semestre_materia,respuesta,0755,,
+¿En qué semestre se da Lenguaje de Programación III?,semestre_materia,respuesta,1572,,
+¿Inglés II es de qué año?,semestre_materia,respuesta,8403,,
+¿en que semestre esta la materia 1498?,semestre_materia,respuesta,1498,,
+¿Cuándo se ve Programación Avanzada?,semestre_materia,sin_informacion,,,
+¿Qué prerrequisitos tiene Inteligencia Artificial?,prerrequisitos,respuesta,1197,,
+¿Qué necesito para ver Sistemas Operativos?,prerrequisitos,respuesta,0689,,
+¿Cuál es el requisito de Base de Datos II?,prerrequisitos,respuesta,8399,,
+¿Qué debo aprobar antes de Métodos Numéricos para Ingeniería?,prerrequisitos,respuesta,0638,,
+requisitos para aprendizaje automatico,prerrequisitos,respuesta,1496,,
+¿Qué pide Herramientas de Computación Gráfica?,prerrequisitos,respuesta,1196,,
+¿Estadística Aplicada tiene prerrequisitos?,prerrequisitos,respuesta,1563,,
+¿Qué prerrequisito tiene Dibujo I?,prerrequisitos,respuesta,1548,,
+¿que necesito pa ver redes?,prerrequisitos,respuesta,0761,,
+¿Qué requisitos tiene Tópicos Especiales II?,prerrequisitos,respuesta,0760,,
+¿Qué requisito tiene la materia 8462?,prerrequisitos,respuesta,8462,,
+¿Qué necesito para ver Cálculo IV?,prerrequisitos,sin_informacion,,,
+¿Cuáles son los requisitos de esa materia?,prerrequisitos,aclaracion,,,
+¿Qué necesito para ver Lenguaje de Programación 2?,prerrequisitos,respuesta,1569,,
+¿Puedo inscribir Inteligencia Artificial si aprobé Estructura de Datos II?,puedo_inscribir,respuesta,1197,8394,si
+¿Puedo meter Aprendizaje Automático si solo aprobé Inteligencia Artificial?,puedo_inscribir,respuesta,1496,1197,no
+Ya pasé Cálculo I ¿puedo llevar Cálculo III?,puedo_inscribir,respuesta,8322,7987,si
+¿puedo matricular redes informaticas si aprobe organizacion y arquitectura de computadoras?,puedo_inscribir,respuesta,0761,0687,no
+¿Puedo cursar Ingeniería de Sistemas Inteligentes si ya aprobé Aprendizaje Automático?,puedo_inscribir,respuesta,1498,1496,si
+¿Puedo ver Métodos Numéricos si aprobé Ecuaciones Diferenciales Ordinarias?,puedo_inscribir,respuesta,0638,0709,no
+Aprobé Lenguaje de Programación I ¿puedo inscribir Lenguaje de Programación II?,puedo_inscribir,respuesta,1569,1564,si
+¿Puedo inscribir Comunicación Oral y Escrita?,puedo_inscribir,respuesta,8360,,si
+¿Puedo inscribir Base de Datos I si aprobé Estructura de Datos I?,puedo_inscribir,respuesta,0856,8362,depende
+¿Puedo tomar Formación de Emprendedores?,puedo_inscribir,respuesta,3055,,depende
+¿De qué materias es prerrequisito Estructura de Datos II?,dependientes,respuesta,8394,,
+¿Qué materias requieren Cálculo II?,dependientes,respuesta,7988,,
+¿Qué puedo ver después de aprobar Base de Datos I?,dependientes,respuesta,0856,,
+¿qué materias abre probabilidad aplicada?,dependientes,respuesta,1568,,
+¿Para qué materias es requisito Lenguaje de Programación I?,dependientes,respuesta,1564,,
+¿Qué asignaturas dependen de Física II?,dependientes,respuesta,8320,,
+¿De qué es requisito Geografía de Panamá?,dependientes,respuesta,1403,,
+¿Cuántos créditos tiene el plan de estudios?,creditos,respuesta,,,
+¿Cuántos créditos vale Base de Datos II?,creditos,respuesta,8399,,
+¿cuantos creditos tiene simulacion de sistemas?,creditos,respuesta,8456,,
+¿Cuál es el total de créditos para graduarme de la licenciatura?,creditos,respuesta,,,
+¿Cuántos créditos tiene Inglés I?,creditos,respuesta,8355,,
+¿Cómo hago para retirar una asignatura?,fuera_alcance,rechazo,,,
+¿Qué becas hay disponibles?,fuera_alcance,rechazo,,,
+¿Cuáles son los requisitos de graduación?,fuera_alcance,rechazo,,,
+¿En qué fechas es la inclusión?,fuera_alcance,rechazo,,,
+¿Cómo pido la beca de asistencia económica?,fuera_alcance,rechazo,,,
+¿Dónde pago la matrícula?,fuera_alcance,rechazo,,,
+¿Qué tal?,fuera_dominio,rechazo,,,
+¿Quién es el presidente de Panamá?,fuera_dominio,rechazo,,,
+¿Me ayudas con mi tarea de física?,fuera_dominio,rechazo,,,
+Recomiéndame una canción,fuera_dominio,rechazo,,,
+¿Va a llover mañana?,fuera_dominio,rechazo,,,
+xyz 123,fuera_dominio,rechazo,,,
